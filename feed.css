@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+
+
+/* stories  */
+
+#card{
+    height: 480px;
+    width: 300px;
+    background-color: #373737;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    overflow-y: auto;
+    position: relative;
+}
+#card::-webkit-scrollbar{
+    display: none;
+}
+
+#stories{
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#stories::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    display: inline-block;
+    overflow: hidden;
+    border: 3px solid red;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+    z-index: 999;
+}
+
+
+/* post  */
+
+#main{
+    /* margin-top: 90px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main #profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+#main #profile img{
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+#text{
+    justify-content: space-between;
+    width: 220px;
+    color: #fff;
+    padding-left: 10px;
+    
+}
+h1{
+    font-size: 12px;
+    padding-top: 2px;
+}
+h4{
+    font-size: 6px;
+    padding-left: 2px;
+    color: #e3e3e3;
+}
+#main #profile i{
+    color: #fff;
+    /* padding-left: 100px; */
+}
+#cont{
+    height: 345px;
+    width: 260px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#cont img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#cont #pic #ani{
+    color: rgb(255, 42, 42);
+    font-size: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+
+#react{
+    padding-top: 8px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+#react #like{
+    color: #fff;
+    font-size: 23px;
+    margin-left: -140px;
+}
+
+#react #cmmnt{
+    color: #fff;
+    font-size: 23px;
+    margin-left: 8px;
+}
